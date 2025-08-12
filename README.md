@@ -1,1 +1,1 @@
-# InteractiveSciencefictions-A3
+# InteractiveScienceFictions-A3
