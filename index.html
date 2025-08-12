@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twotter | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <!--REFERENCES:
+    Alzheimer's Association. “Medications for Memory, Cognition and Dementia-Related Behaviors.” Alzheimer’s Association, 2019. https://www.alz.org/alzheimers-dementia/treatments/medications-for-memory.
+    
+    Becker, Brian. “How Memories Are Made: Stages of Memory Formation | Lesley University.” Lesley.edu. Lesley University, 2019. https://lesley.edu/article/stages-of-memory.
+    
+    McLeod, Saul. “Memory Stages: Encoding Storage and Retrieval | Simply Psychology.” Simply Psychology, June 16, 2023. https://www.simplypsychology.org/memory.html.
+    
+    Queensland Brain Institute. “How Are Memories Formed?” Uq.edu.au, December 2, 2016. https://qbi.uq.edu.au/memory/how-are-memories-formed.
+    
+    ———. “Where Are Memories Stored in the Brain?” Uq.edu.au. The University of Queensland, December 2, 2016. https://qbi.uq.edu.au/memory/where-are-memories-stored.
+    !-->
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <span id="logo" style="font-family: headingFont; font-size:xxx-large"><a style="font-family:logoFont">P</a> Twotter</span>
+
+            <span id="navPanel">
+
+                <div class="row1">
+
+                    <div class="column1">
+                
+                        <p id="navHome" style="cursor: pointer; color: #182739; background-color: #cc9a1c;"><b>Home</b></p>
+
+                    </div>
+
+                    <div class="column2">
+
+                        <p id="navDms" onclick="changeDms()" style="cursor: pointer;"><b>Direct Messages</b></p>
+
+                    </div>
+
+                    <div class="column3">
+
+                        <p id="navProf" onclick="changeProfile()" style="cursor: pointer;"><b>My Profile</b></p>
+                    
+                    </div>
+
+                </div>
+            
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row2">
+
+            <div class="column4" id="overlay">
+
+                <div class="row2-1">
+
+                    <div style="font-size:larger;"><b>@SillyLilly03</b></div>
+                    <div style="font-size:smaller; opacity:70%;">7 minutes ago</div>
+                    <p>Happy birthday to one of my best friends, @.CleoFielder42. Missing you extra today &lt;3</p>
+
+                </div>
+
+                <div class="row2-2" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@Ch4rlie.6</b></div>
+                    <div style="font-size:smaller; opacity:70%;">38 minutes ago</div>
+                    <p>Sick of people telling me to try Memteramine. “It’s a shame, you forget so much” no I don’t???? Sorry YOU’RE used to remembering everything, but it doesn’t bother me that I sometimes forget what I need when I’m shopping. It’s ok that I can’t perfectly recall my trip to the beach. Mind your own business.</p>
+
+                </div>
+
+                    <div class="row2-2-1" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Atlas404</b></div>
+                        <div style="font-size:smaller; opacity:70%;">30 minutes ago</div>
+                        <p>When did the impermanence of memory become something we were so desperate to overcome? Does ephemerality not make something more valuable?</p>
+
+                    </div>
+
+                <div class="row2-3" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@Katiesaurus.17</b></div>
+                    <div style="font-size:smaller; opacity:70%;">2 hours ago</div>
+                    <p>Lowkey couldn’t have gotten my degree without Memteramine…</p>
+
+                </div>
+
+                    <div class="row2-3-1" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@_TiaBrowne</b></div>
+                        <div style="font-size:smaller; opacity:70%;">2 hours ago</div>
+                        <p>THIS!! I get that the ODs are bad, but for those of us using it properly, it’s a lifesaver</p>
+
+                    </div>
+
+                    <div class="row2-3-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Macey_Bell</b></div>
+                        <div style="font-size:smaller; opacity:70%;">1 hour ago</div>
+                        <p>CONGRATS KATIEEEE!!! Gonna miss our Memteramine study sessions… At least I know I’ll never forget them &lt;3</p>
+
+                    </div>
+
+                <div class="row2-4" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@SciHealthNews</b></div>
+                    <div style="font-size:smaller; opacity:70%;">9 hours ago</div>
+                    <p>The Australian Government is ramping up their efforts to subdue the “Memteramine Plague”, enacting several protective measures to fight against the rise in Memteramine-related overdoses. These new measures include tightening restrictions for receiving Memteramine prescriptions, and the development of numerous Memteramine safe-use sites in libraries, staffed with medical personnel.</p>
+
+                </div>
+
+                    <div class="row2-4-1" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@.JamesBuckley43</b></div>
+                        <div style="font-size:smaller; opacity:70%;">9 hours ago</div>
+                        <p>Hoping other governments see this and feel inspired</p>
+
+                    </div>
+
+                    <div class="row2-4-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Ch4rlie.6</b></div>
+                        <div style="font-size:smaller; opacity:70%;">7 hours ago</div>
+                        <p>It's about damn time!</p>
+
+                    </div>
+
+                <div class="row2-5" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@_TiaBrowne</b></div>
+                    <div style="font-size:smaller; opacity:70%;">12 hours ago</div>
+                    <p>Got leftover Memteramine from finals, now I’m itching to learn another new language. Any suggestions?</p>
+
+                </div>
+
+                    <div class="row2-5-1" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Katiesaurus.17</b></div>
+                        <div style="font-size:smaller; opacity:70%;">11 hours ago</div>
+                        <p>Romanian! Or Latin!</p>
+
+                    </div>
+
+                    <div class="row2-5-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Leo.theGOAT1</b></div>
+                        <div style="font-size:smaller; opacity:70%;">9 hours ago</div>
+                        <p>Japanese?</p>
+
+                    </div>
+
+                <div class="row2-6" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@Samwich58</b></div>
+                    <div style="font-size:smaller; opacity:70%;">17 hours ago</div>
+                    <p>say cheese! never gonna forget this weekend! (literally, thanks memteramine) @ClancyDurand</p>
+
+                    <p style="display:inline-flex;">
+                        <img src="images/SayCheese.JPEG" id="imgSayCheese">
+                        <video controls id="videoSayCheese">
+                            <source src="videos/CheeseBite.mp4" type="video/mp4">
+                        </video>
+                    </p>
+
+                </div>
+
+                    <div class="row2-6-1" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@ClancyDurand</b></div>
+                        <div style="font-size:smaller; opacity:70%;">17 hours ago</div>
+                        <p>Love u babes, ik we just got back but I NEED another getaway ASAP!!! Memories only keep u entertained for so long!</p>
+
+                    </div>
+
+                    <div class="row2-6-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Lizzie_83</b></div>
+                        <div style="font-size:smaller; opacity:70%;">16 hours ago</div>
+                        <p>Not the cheese block lol</p>
+
+                    </div>
+
+                <div class="row2-7" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@ClancyDurand</b></div>
+                    <div style="font-size:smaller; opacity:70%;">19 hours ago</div>
+                    <p>Mid-holiday Memteramine study session :) the grind never stops!!</p>
+                    <img src="images/StudyTime.JPEG" id="imgStudyTime">
+
+                </div>
+
+                    <div class="row2-7-1" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Lizzie_83</b></div>
+                        <div style="font-size:smaller; opacity:70%;">19 hours ago</div>
+                        <p>My fave nerds &lt;3</p>
+
+                    </div>
+
+                    <div class="row2-7-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Samwich58</b></div>
+                        <div style="font-size:smaller; opacity:70%;">17 hours ago</div>
+                        <p>love u dorks !!</p>
+
+                    </div>
+
+                <div class="row2-8" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@Welcoming2100CE</b></div>
+                    <div style="font-size:smaller; opacity:70%;">20 hours ago</div>
+                    <p>Consult your GP about getting a Memteramine prescription to BOOST your memory and make learning infinitely easier! Memteramine chemically enhances neurogenesis and streamlines the memory-encoding process. Decades of research into memory medications for those suffering from Alzheimer’s or dementia have led to this moment, where our knowledge of cholinesterase inhibitors and glutamate regulators has become so advanced, we can help ANYONE boost their memory-making functions!</p>
+
+                </div>
+
+                    <div class="row2-8-1" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@.JamesBuckley43</b></div>
+                        <div style="font-size:smaller; opacity:70%;">18 hours ago</div>
+                        <p>For those wondering, neurogenesis is the creation of new neurons, which are used in encoding memories. Cholinesterase inhibitors prevent the breakdown of a chemical messenger important for memory and learning, and glutamate helps the brain process information. ALWAYS do your own research!</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <span class="highlight" id="systemMsg" style="border: 1px solid #cc9a1c;background-color: #0b131c; padding:5px; font-size:smaller;">
+
+        <div>This account has been disabled. Please contact Twotter Support if you would like to reopen the account.</div>
+
+    </span>
+
+</body>
+
+</html>

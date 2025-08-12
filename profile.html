@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twotter | My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> 
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <span id="logo" style="font-family: headingFont; font-size:xxx-large"><a style="font-family:logoFont">P</a> Twotter</span>
+
+            <span id="navPanel">
+
+                <div class="row1">
+
+                    <div class="column1">
+                
+                        <p id="navHome" onclick="changeHome()" style="cursor: pointer;"><b>Home</b></p>
+
+                    </div>
+
+                    <div class="column2">
+
+                        <p id="navDms" onclick="changeDms()" style="cursor: pointer;"><b>Direct Messages</b></p>
+
+                    </div>
+
+                    <div class="column3">
+
+                        <p id="navProf" style="cursor: pointer; color: #182739; background-color: #cc9a1c;"><b>My Profile</b></p>
+                    
+                    </div>
+
+                </div>
+            
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row5">
+
+            <div class="column16" id="overlay">
+
+                <div class="row5-1">
+
+                    <div style="font-size:xxx-large; font-family:headingFont; letter-spacing: 1%;">.CleoFielder42</div>
+
+                    <p style="display:inline-flex; padding-left: 2%;">
+
+                        <img src="images/ProfilePhoto.jpg" id="myProfilePic">
+                        <img src="images/Snow.jpg" id="snowPic">
+                        <img src="images/SelfiePurple.jpg" id="selfiePurple">
+                        <img src="images/Dogs.jpg" id="dogTrio">
+                        
+                    </p>
+                       
+                    <p style="display:inline-flex;">
+
+                        <a style="font-size:medium;" id="userInfo">Part-time academic victim, part-time customer service victim, full-time delight to be around :)</a>
+
+                        <a style="padding-left: 220px; text-align:center;"><b>Following</b> 47</a>
+
+                        <a style="padding-left: 50px; text-align:center;"><b>Followers</b> 61</a>
+
+                    </p>
+
+                </div>
+
+                <p style="font-size:xx-large; font-family:headingFont;">Your Posts</p>
+
+                <div class="row5-2">
+
+                    <div style="font-size:larger;"><b>@.CleoFielder42</b></div>
+                    <div style="font-size:smaller; opacity:70%;"> 23 June</div>
+                    <p>Whoever said better memory = better grades did NOT take critical thinking into account… critical thinking pill released when?</p>
+
+                </div>
+
+                    <div class="row5-2-1" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Leo.theGOAT1</b></div>
+                        <div style="font-size:smaller; opacity:70%;">23 June</div>
+                        <p>Skill issue</p>
+
+                    </div>
+
+                    <div class="row5-2-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@_TiaBrowne</b></div>
+                        <div style="font-size:smaller; opacity:70%;">24 June</div>
+                        <p>Oooh good idea!</p>
+
+                    </div>
+
+                <div class="row5-3" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@.CleoFielder42</b></div>
+                    <div style="font-size:smaller; opacity:70%;"> 9 June</div>
+                    <p>Tried Memteramine to help me study. Got distracted. Now I can name every known dinosaur. Parasaurolophus is my favourite :)</p>
+
+                </div>
+
+                    <div class="row5-2-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Katiesaurus.17</b></div>
+                        <div style="font-size:smaller; opacity:70%;">9 June</div>
+                        <p>Happens to me all the time! I &lt;3 Argentinosaurus</p>
+
+                    </div>
+
+                <div class="row5-4" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@.CleoFielder42</b></div>
+                    <div style="font-size:smaller; opacity:70%;">30 May</div>
+                    <p>Can’t be sure but I think @Ch4rlie.6 loves my humble abode?</p>
+                    <video controls id="videoHumbleAbode">
+                        <source src="videos/SecurityVideo.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                    <div class="row5-2-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Ch4rlie.6</b></div>
+                        <div style="font-size:smaller; opacity:70%;">30 May</div>
+                        <p>And I meant every word.</p>
+
+                    </div>
+
+                <div class="row5-4" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@.CleoFielder42</b></div>
+                    <div style="font-size:smaller; opacity:70%;">22 May</div>
+                    <p>When the closer did a shit job but u can’t complain to the boss bc they’re related :(</p>
+                    <video controls id="videoStoreMess">
+                        <source src="videos/StoreMess.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="row5-4" style="margin-top: 25px;">
+
+                    <div style="font-size:larger;"><b>@.CleoFielder42</b></div>
+                    <div style="font-size:smaller; opacity:70%;">10 May</div>
+                    <p>Happy birthday to my best friend, apple of my eye @SillyLilly03 !!!!!</p>
+
+                </div>
+
+                    <div class="row5-2-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@SillyLilly03</b></div>
+                        <div style="font-size:smaller; opacity:70%;">10 May</div>
+                        <p>Aww love u!!</p>
+
+                    </div>
+
+                    <div class="row5-2-2" style="margin-left: 50px;">
+
+                        <div style="font-size:larger;"><b>@Ch4rlie.6</b></div>
+                        <div style="font-size:smaller; opacity:70%;">10 May</div>
+                        <p>Happy birthday Lil!</p>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <span class="highlight" id="systemMsg" style="border: 1px solid #cc9a1c;background-color: #0b131c; padding:5px; font-size:smaller;">
+
+        <div>This account has been disabled. Please contact Twotter Support if you would like to reopen the account.</div>
+
+    </span>
+
+</body>
+
+</html>

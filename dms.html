@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twotter | Direct Messages</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <span id="logo" style="font-family: headingFont; font-size:xxx-large"><a style="font-family:logoFont">P</a> Twotter</span>
+
+            <span id="navPanel">
+
+                <div class="row1">
+
+                    <div class="column1">
+                
+                        <p id="navHome" onclick="changeHome()" style="cursor: pointer;"><b>Home</b></p>
+
+                    </div>
+
+                    <div class="column2">
+
+                        <p id="navDms" style="cursor: pointer; color: #182739; background-color: #cc9a1c;"><b>Direct Messages</b></p>
+
+                    </div>
+
+                    <div class="column3">
+
+                        <p id="navProf" onclick="changeProfile()" style="cursor: pointer;"><b>My Profile</b></p>
+                    
+                    </div>
+
+                </div>
+            
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row3">
+
+            <div class="column5">
+
+                <div class="row3-1" id="profileLilly" onclick="openChatLilly()" style="cursor:pointer;">
+
+                    <br><div style="font-size:115%;" ><b>SillyLilly03</b></div>
+                    <div style="font-size:smaller; opacity: 90%;">Cleo? - 4:32pm</div><br>
+
+                </div>
+
+                <div class="row3-2" id="profileTia" onclick="openChatTia()" style="cursor:pointer;">
+
+                    <br><div style="font-size:115%;"><b>_TiaBrowne</b></div>
+                    <div style="font-size:smaller; opacity: 90%;">Hello? - 12:53pm</div><br>
+
+                </div>
+
+                <div class="row3-3" id="profileLeo" onclick="openChatLeo()" style="cursor:pointer;">
+
+                    <br><div style="font-size:115%;"><b>Leo.theGOAT1</b></div>
+                    <div style="font-size:smaller; opacity: 90%;">Probably - 5:39pm</div><br>
+
+                </div>
+
+                <div class="row3-4" onclick="openChatSam()" style="cursor:pointer;">
+
+                    <br><div style="font-size:115%;"><b>Samwich58</b></div>
+                    <div style="font-size:smaller; opacity: 90%;">Thanks - 2:09pm</div><br>
+
+                </div>
+
+                <div class="row3-5" onclick="openChatKatie()" style="cursor:pointer;">
+
+                    <br><div style="font-size:115%;"><b>Katiesaurus.17</b></div>
+                    <div style="font-size:smaller; opacity: 90%;">Ugh what an angel! That’d be lovely - 4:35pm</div><br>
+
+                </div>
+
+                <div class="row3-6" onclick="openChatCharlie()" style="cursor:pointer;">
+
+                    <br><div style="font-size:115%;"><b>Ch4rlie.6</b></div>
+                    <div style="font-size:smaller; opacity: 90%;">Byeeee - 11:43pm</div><br>
+
+                </div>
+
+                <div class="row3-7" onclick="openChatClancy()" style="cursor:pointer;">
+
+                    <br><div style="font-size:115%;"><b>ClancyDurand</b></div>
+                    <div style="font-size:smaller; opacity: 90%;">Sure! 5:56pm</div><br>
+
+                </div>
+
+                <div class="row3-8" onclick="openChatJames()" style="cursor:pointer;">
+
+                    <br><div style="font-size:115%;"><b>.JamesBuckley43</b></div>
+                    <div style="font-size:smaller; opacity: 90%;">Hey, haven’t heard from you in a while… you ok? - 9:03pm</div><br>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row4">
+
+            <div class="column6" id="chatLilly" style="z-index: 1;">
+
+                <div class="row4-1">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Tuesday 2 June</div>
+                    <div>results got released! how’d u go?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:14pm</div>
+
+                </div>
+
+                <div class="row4-2" style="justify-items:right;">
+
+                    <div>Mostly credits, 1 distinction :(</div>
+                    <div style="font-size:smaller; opacity:70%;">5:32pm</div>
+
+                </div>
+
+                <div class="row4-3">
+
+                    <div>Why sad? Distinction’s so good!</div>
+                    <div style="font-size:smaller; opacity:70%;">5:33pm</div>
+
+                </div>
+
+                <div class="row4-4" style="justify-items:right;">
+
+                    <div>It was a 75. That’s borderline</div>
+                    <div style="font-size:smaller; opacity:70%;">5:34pm</div>
+
+                </div>
+
+                <div class="row4-5">
+
+                    <div>Still a distinction :)</div>
+                    <div style="font-size:smaller; opacity:70%;">5:34pm</div>
+
+                </div>
+
+                <div class="row4-6" style="justify-items:right;">
+
+                    <div>How’d u go?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:36pm</div>
+
+                </div>
+
+                <div class="row4-7">
+
+                    <div>All distinctions.<br>Could’ve gotten a HD if I’d “played Jackie with more emotional turmoil” whatever that means</div>
+                    <div style="font-size:smaller; opacity:70%;">5:37pm</div>
+
+                </div>
+
+                <div class="row4-8" style="justify-items:right;">
+
+                    <div>Congrats</div>
+                    <div style="font-size:smaller; opacity:70%;">5:37pm</div>
+
+                </div>
+
+                <div class="row4-9">
+
+                    <div>Thanks! Celebratory dinner tonight?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:38pm</div>
+
+                </div>
+
+                <div class="row4-10" style="justify-items:right;">
+
+                    <div>Sure</div>
+                    <div style="font-size:smaller; opacity:70%;">5:40pm</div>
+
+                </div>
+
+                <div class="row4-11" >
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Wednesday 10 June</div>
+                    <div>How u been?</div>
+                    <div style="font-size:smaller; opacity:70%;">11:24am</div>
+
+                </div>
+
+                <div class="row4-12" style="justify-items:right;">
+
+                    <div>Busy. Talk later?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:01pm</div>
+
+                </div>
+
+                <div class="row4-13" >
+
+                    <div>Sure :)</div>
+                    <div style="font-size:smaller; opacity:70%;">5:23pm</div>
+
+                </div>
+
+                <div class="row4-14">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Thursday 18 June</div>
+                    <div>I’m worried about u, Cleo, can we talk?</div>
+                    <div style="font-size:smaller; opacity:70%;">11:57am</div>
+
+                </div>
+
+                <div class="row4-15">
+
+                    <div>Hello?</div>
+                    <div style="font-size:smaller; opacity:70%;">7:12pm</div>
+
+                </div>
+
+                <div class="row4-16">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Thursday 25 June</div>
+                    <div>Seriously, just respond so I know ur ok</div>
+                    <div style="font-size:smaller; opacity:70%;">10:02am</div>
+
+                </div>
+
+                <div class="row4-17">
+
+                    <div>Cleo?</div>
+                    <div style="font-size:smaller; opacity:70%;">4:32pm</div>
+
+                </div>
+
+            </div>
+
+            <div class="column7" id="chatTia">
+
+                <div class="row4-1" style="justify-items:right;">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Thursday 4 June</div>
+                    <div>Hey, u got any Memteramine to spare?</div>
+                    <div style="font-size:smaller; opacity:70%;">2:07pm</div>
+
+                </div>
+
+                <div class="row4-2">
+
+                    <div>Yea. Why?</div>
+                    <div style="font-size:smaller; opacity:70%;">2:31pm</div>
+
+                </div>
+
+                <div class="row4-3" style="justify-items:right;">
+
+                    <div>GP wants a psych assessment but I can’t get a booking before uni starts back</div>
+                    <div style="font-size:smaller; opacity:70%;">2:40pm</div>
+
+                </div>
+
+                <div class="row4-4">
+
+                    <div>Aw man screw the system</div>
+                    <div style="font-size:smaller; opacity:70%;">2:46pm</div>
+
+                </div>
+
+                <div class="row4-5">
+
+                    <audio controls id="Finnish" src="sound/Finnish.mp3"></audio>
+                    <div style="font-size:smaller; opacity:70%;">2:48pm</div>
+
+                </div>
+
+                <div class="row4-6" style="justify-items:right;">
+
+                    <div>?</div>
+                    <div style="font-size:smaller; opacity:70%;">2:51pm</div>
+
+                </div>
+
+                <div class="row4-7">
+
+                    <div>It's Finnish<br>Learnt it last month</div>
+                    <div style="font-size:smaller; opacity:70%;">2:52pm</div>
+
+                </div>
+
+                <div class="row4-8" style="justify-items:right;">
+
+                    <div>Ahh I see</div>
+                    <div style="font-size:smaller; opacity:70%;">2:53pm</div>
+
+                </div>
+
+                <div class="row4-9">
+
+                    <div>Be careful tho<br>Don’t wanna end up like that American chick</div>
+                    <div style="font-size:smaller; opacity:70%;">2:56pm</div>
+
+                </div>
+
+                <div class="row4-10" style="justify-items:right;">
+
+                    <div>? Who</div>
+                    <div style="font-size:smaller; opacity:70%;">2:58pm</div>
+
+                </div>
+
+                <div class="row4-11">
+
+                    <div>Clara Jones, that med student from NY<br>Got so stressed she took too much and OD’d</div>
+                    <div style="font-size:smaller; opacity:70%;">2:59pm</div>
+
+                </div>
+
+                <div class="row4-12" style="justify-items:right;">
+
+                    <div>Oh yeah I heard about that</div>
+                    <div style="font-size:smaller; opacity:70%;">3:02pm</div>
+
+                </div>
+
+                <div class="row4-13">
+
+                    <div>Yeah... she's fine now, tho<br>Doesn’t remember like a whole day before the OD<br>Some side effect of taking too much, apparently</div>
+                    <div style="font-size:smaller; opacity:70%;">3:05pm</div>
+
+                </div>
+
+                <div class="row4-14" style="justify-items:right;">
+
+                    <div>Well I promise I’ll be super responsible</div>
+                    <div style="font-size:smaller; opacity:70%;">3:06pm</div>
+
+                </div>
+
+                <div class="row4-15">
+
+                    <div>U better<br>I’m not getting arrested bc u can’t do drugs responsibly</div>
+                    <div style="font-size:smaller; opacity:70%;">3:09pm</div>
+
+                </div>
+
+                <div class="row4-16">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Thursday 25 June</div>
+                    <div>This aged poorly<br>Katie told me she had to call an ambulance? u ok?</div>
+                    <div style="font-size:smaller; opacity:70%;">10:31am</div>
+
+                </div>
+
+                <div class="row4-17">
+
+                    <div>Hello?</div>
+                    <div style="font-size:smaller; opacity:70%;">12:53pm</div>
+
+                </div>
+
+            </div>
+
+            <div class="column8" id="chatLeo">
+
+                <div class="row4-1">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Tuesday 2 June</div>
+                    <div>I’m a genius<br>HD’s across the board!<br>Told u I’m smarter</div>
+                    <div style="font-size:smaller; opacity:70%;">5:07pm</div>
+
+                </div>
+
+                <div class="row4-2" style="justify-items:right;">
+
+                    <div>U don’t even know what I got</div>
+                    <div style="font-size:smaller; opacity:70%;">5:18pm</div>
+
+                </div>
+
+                <div class="row4-3">
+
+                    <div>Can’t be better than all HD’s</div>
+                    <div style="font-size:smaller; opacity:70%;">5:21pm</div>
+
+                </div>
+
+                <div class="row4-4" style="justify-items:right;">
+
+                    <div>At least I didn’t cheat</div>
+                    <div style="font-size:smaller; opacity:70%;">5:23pm</div>
+
+                </div>
+
+                <div class="row4-5">
+
+                    <div>How do u think I cheated?<br>By being better than u?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:25pm</div>
+
+                </div>
+
+                <div class="row4-6" style="justify-items:right;">
+
+                    <div>U took Memteramine</div>
+                    <div style="font-size:smaller; opacity:70%;">5:27pm</div>
+
+                </div>
+
+                <div class="row4-7">
+
+                    <div>That’s not cheating<br>It’s getting with the times<br>Something u should consider</div>
+                    <div style="font-size:smaller; opacity:70%;">5:31pm</div>
+
+                </div>
+
+                <div class="row4-8" style="justify-items:right;">
+
+                    <div>I’m doing fine without performance enhancing drugs</div>
+                    <div style="font-size:smaller; opacity:70%;">5:33pm</div>
+
+                </div>
+
+                <div class="row4-9">
+
+                    <div>It’s not performance enhancing<br>It’s just… unlocking ur full potential</div>
+                    <div style="font-size:smaller; opacity:70%;">5:35pm</div>
+
+                </div>
+
+                <div class="row4-10" style="justify-items:right;">
+
+                    <div>Uh huh</div>
+                    <div style="font-size:smaller; opacity:70%;">5:35pm</div>
+
+                </div>
+
+                <div class="row4-11">
+
+                    <div>Whatever<br>Pretty sure Tia has a shit ton if u wanna try it</div>
+                    <div style="font-size:smaller; opacity:70%;">5:36pm</div>
+
+                </div>
+
+                <div class="row4-12" style="justify-items:right;">
+
+                    <div>U think they’d let me?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:37pm</div>
+
+                </div>
+
+                <div class="row4-13">
+
+                    <div>Probably</div>
+                    <div style="font-size:smaller; opacity:70%;">5:39pm</div>
+
+                </div>
+
+            </div>
+
+            <div class="column9" id="chatSam">
+
+                <div class="row4-1">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Tuesday 2 June</div>
+                    <div>hey, u free aug 1-4?<br>clancy, liz and i are going on a trip :)</div>
+                    <div style="font-size:smaller; opacity:70%;">1:03pm</div>
+
+                </div>
+
+                <div class="row4-2" style="justify-items:right;">
+
+                    <div>Uhh sounds fun but I think I’ll be busy with uni and whatever</div>
+                    <div style="font-size:smaller; opacity:70%;">1:47pm</div>
+
+                </div>
+
+                <div class="row4-3">
+
+                    <div>alright :(<br>the offer still stands, if u change ur mind</div>
+                    <div style="font-size:smaller; opacity:70%;">1:54pm</div>
+
+                </div>
+
+                <div class="row4-4" style="justify-items:right;">
+
+                    <div>Thanks</div>
+                    <div style="font-size:smaller; opacity:70%;">2:09pm</div>
+
+                </div>
+
+            </div>
+
+            <div class="column10" id="chatKatie">
+
+                <div class="row4-1" style="justify-items:right;">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Sunday 14 June</div>
+                    <div>Hey! I heard u have a Memteramine study group?</div>
+                    <div style="font-size:smaller; opacity:70%;">4:19pm</div>
+
+                </div>
+
+                <div class="row4-2">
+
+                    <div>Yep! We meet at mine every Wednesday 5pm</div>
+                    <div style="font-size:smaller; opacity:70%;">4:23pm</div>
+
+                </div>
+
+                <div class="row4-3" style="justify-items:right;">
+
+                    <div>I’m working till 6, is that ok?</div>
+                    <div style="font-size:smaller; opacity:70%;">4:27pm</div>
+
+                </div>
+
+                <div class="row4-4">
+
+                    <div>Yeah of course! Can’t wait to see you again, it’s been so long</div>
+                    <div style="font-size:smaller; opacity:70%;">4:29pm</div>
+
+                </div>
+
+                <div class="row4-5" style="justify-items:right;">
+
+                    <div style="text-align:right;">Yeah, looking forward to it<br>I can pick up some takeaway on my way if u want?</div>
+                    <div style="font-size:smaller; opacity:70%;">4:32pm</div>
+
+                </div>
+
+                <div class="row4-6">
+
+                    <div>Ugh what an angel! That’d be lovely</div>
+                    <div style="font-size:smaller; opacity:70%;">4:35pm</div>
+
+                </div>
+
+            </div>
+
+            <div class="column11" id="chatCharlie">
+
+                <div class="row4-1" style="justify-items:right;">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Tuesday 19 May</div>
+                    <div>Im going insane</div>
+                    <div style="font-size:smaller; opacity:70%;">11:24pm</div>
+
+                </div>
+
+                <div class="row4-2">
+
+                    <div>Studying is going well I see</div>
+                    <div style="font-size:smaller; opacity:70%;">11:31pm</div>
+
+                </div>
+
+                <div class="row4-3" style="justify-items:right;">
+
+                    <div>AAAAAAAAAAAAA</div>
+                    <div style="font-size:smaller; opacity:70%;">11:32pm</div>
+
+                </div>
+
+                <div class="row4-4">
+
+                    <div>There there</div>
+                    <div style="font-size:smaller; opacity:70%;">11:32pm</div>
+
+                </div>
+
+                <div class="row4-5" style="justify-items:right;">
+
+                    <div>To make matters worse, like 80% of my class takes Memteramine</div>
+                    <div style="font-size:smaller; opacity:70%;">11:34pm</div>
+
+                </div>
+
+                <div class="row4-6">
+
+                    <div>Fucking losers<br>Probably couldn’t remember how to tie their shoes without that stupid pill</div>
+                    <div style="font-size:smaller; opacity:70%;">11:36pm</div>
+
+                </div>
+
+                <div class="row4-7" style="justify-items:right;">
+
+                    <div>Haha exactly</div>
+                    <div style="font-size:smaller; opacity:70%;">11:36pm</div>
+
+                </div>
+
+                <div class="row4-8">
+
+                    <div>Not to mention it’s still a new med<br>We barely know anything about it<br>Like that whole fiasco in NY with the OD</div>
+                    <div style="font-size:smaller; opacity:70%;">11:39pm</div>
+
+                </div>
+
+                <div class="row4-9" style="justify-items:right;">
+
+                    <div style="text-align:right;">Yeah I heard about that<br>Spooky stuff</div>
+                    <div style="font-size:smaller; opacity:70%;">11:40pm</div>
+
+                </div>
+
+                <div class="row4-10">
+
+                    <div>Terrifying<br>A memory-boosting drug that erases ur memory if u OD?<br>No thanks</div>
+                    <div style="font-size:smaller; opacity:70%;">11:41pm</div>
+
+                </div>
+
+                <div class="row4-11" style="justify-items:right;">
+
+                    <div>Yeah…</div>
+                    <div style="font-size:smaller; opacity:70%;">11:41pm</div>
+
+                </div>
+
+                <div class="row4-12">
+
+                    <div>Ur better off just sticking to ur natural intellect</div>
+                    <div style="font-size:smaller; opacity:70%;">11:42pm</div>
+
+                </div>
+
+                <div class="row4-13" style="justify-items:right;">
+
+                    <div>Or at least being more careful</div>
+                    <div style="font-size:smaller; opacity:70%;">11:43pm</div>
+
+                </div>
+
+                <div class="row4-14">
+
+                    <div>Sure<br>Anyway I gtg</div>
+                    <div style="font-size:smaller; opacity:70%;">11:43pm</div>
+
+                </div>
+
+                <div class="row4-15" style="justify-items:right;">
+
+                    <div>Byeeee</div>
+                    <div style="font-size:smaller; opacity:70%;">11:43pm</div>
+
+                </div>
+
+            </div>
+
+            <div class="column12" id="chatClancy">
+
+                <div class="row4-1">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Saturday 16 May</div>
+                    <div>Oooooooh u REALLY wanna hang out with ussssssss<br><br></div>
+                    <img src="images/SelfieTime.JPG" id="imgSelfie">
+                    <div style="font-size:smaller; opacity:70%;">5:37pm</div>
+
+                </div>
+
+                <div class="row4-2" style="justify-items:right;">
+
+                    <div>Is this supposed to be hypnosis?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:41pm</div>
+
+                </div>
+
+                <div class="row4-3">
+
+                    <div>Yes<br>Is it working?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:46pm</div>
+
+                </div>
+
+                <div class="row4-4" style="justify-items:right;">
+
+                    <div style="text-align:right;">No<br>U guys look like an indie band</div>
+                    <div style="font-size:smaller; opacity:70%;">5:49pm</div>
+
+                </div>
+
+                <div class="row4-5">
+
+                    <div>Wanna join? We need a drummer</div>
+                    <div style="font-size:smaller; opacity:70%;">5:50pm</div>
+
+                </div>
+
+                <div class="row4-6" style="justify-items:right;">
+
+                    <div style="text-align:right;">Tempting offer<br>I do love hitting things<br>Rain check?</div>
+                    <div style="font-size:smaller; opacity:70%;">5:54pm</div>
+
+                </div>
+
+                <div class="row4-7">
+
+                    <div>Sure!</div>
+                    <div style="font-size:smaller; opacity:70%;">5:56pm</div>
+
+                </div>
+
+            </div>
+
+            <div class="column13" id="chatJames">
+
+                <div class="row4-1" style="justify-items:right;">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Tuesday 5 May</div>
+                    <div>Hey :)</div>
+                    <div style="font-size:smaller; opacity:70%;">1:02pm</div>
+
+                </div>
+
+                <div class="row4-2">
+
+                    <div>Hey! Wanna check out that new Italian place?</div>
+                    <div style="font-size:smaller; opacity:70%;">1:21pm</div>
+
+                </div>
+
+                <div class="row4-3" style="justify-items:right;">
+
+                    <div style="text-align:right;">YES! I keep stalking them online<br>Their garlic bread looks incredible :D</div>
+                    <div style="font-size:smaller; opacity:70%;">1:28pm</div>
+
+                </div>
+
+                <div class="row4-4">
+
+                    <div>Ah yes, garlic bread<br>The most notable part of Italian cuisine</div>
+                    <div style="font-size:smaller; opacity:70%;">1:31pm</div>
+
+                </div>
+
+                <div class="row4-5" style="justify-items:right;">
+
+                    <div>The pasta looks good, too</div>
+                    <div style="font-size:smaller; opacity:70%;">1:33pm</div>
+
+                </div>
+
+                <div class="row4-6">
+
+                    <div>But not as good as the garlic bread?</div>
+                    <div style="font-size:smaller; opacity:70%;">1:34pm</div>
+
+                </div>
+
+                <div class="row4-7" style="justify-items:right;">
+
+                    <div>Nothing looks as good as garlic bread.</div>
+                    <div style="font-size:smaller; opacity:70%;">1:34pm</div>
+
+                </div>
+
+                <div class="row4-8">
+
+                    <div>Haha<br>How about this Friday? Meet you there at 7?</div>
+                    <div style="font-size:smaller; opacity:70%;">1:36pm</div>
+
+                </div>
+
+                <div class="row4-9" style="justify-items:right;">
+
+                    <div>Yep!</div>
+                    <div style="font-size:smaller; opacity:70%;">1:37pm</div>
+
+                </div>
+
+                <div class="row4-10">
+
+                    <div>See u :)</div>
+                    <div style="font-size:smaller; opacity:70%;">1:38pm</div>
+
+                </div>
+
+                <div class="row4-11">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Friday 8 May</div>
+                    <div>Hey, you ok?<br>You seemed kind of… distracted</div>
+                    <div style="font-size:smaller; opacity:70%;">11:53pm</div>
+
+                </div>
+
+                <div class="row4-12" style="justify-items:right;">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Wednesday 13 May</div>
+                    <div style="text-align:right;">Yeah, sorry, just some personal stuff going on<br>It was nice listening to u talk about ur work<br>I’d go into medicine too, if I had the brain</div>
+                    <div style="font-size:smaller; opacity:70%;">2:00pm</div>
+
+                </div>
+
+                <div class="row4-13">
+
+                    <div>You do have the brain</div>
+                    <div style="font-size:smaller; opacity:70%;">3:12pm</div>
+
+                </div>
+
+                <div class="row4-14" style="justify-items:right;">
+
+                    <div style="text-align:right;">Thanks but my memory’s pretty shit<br>Been thinking about trying Memteramine. Is it dangerous?</div>
+                    <div style="font-size:smaller; opacity:70%;">3:17pm</div>
+
+                </div>
+
+                <div class="row4-15">
+
+                    <div>Nah, it seems pretty harmless<br>Just standard<br>I take it sometimes for finals</div>
+                    <div style="font-size:smaller; opacity:70%;">3:20pm</div>
+
+                </div>
+
+                <div class="row4-16" style="justify-items:right;">
+
+                    <div>I see...</div>
+                    <div style="font-size:smaller; opacity:70%;">3:22pm</div>
+
+                </div>
+
+                <div class="row4-17">
+
+                    <div style="justify-self:center; font-size: small; opacity: 70%;">Monday 25 May</div>
+                    <div>Hey, haven’t heard from you in a while… you ok?</div>
+                    <div style="font-size:smaller; opacity:70%;">9:03pm</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <span class="highlight" id="systemMsgDms" style="border: 1px solid #cc9a1c;background-color: #0b131c; padding:5px; font-size:smaller;">
+
+        <div>This account has been disabled. Please contact Twotter Support if you would like to reopen the account.</div>
+
+    </span>
+
+</body>
+
+</html>
